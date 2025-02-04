@@ -125,8 +125,14 @@
 
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
+         <!--Commit by Julian Supers-->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img 
+            srcset="firefox_logo-only_RGB-120.png 120w, 
+            firefox_logo-only_RGB-400.png 400w"
+            sizes="(max-width: 500px) 120px, 400px"
+            src="../images/firefox_logo-only_RGB.png"
+            alt="firefox logo">
         </a>
         <a href="https://www.mozilla.org/">
           <img>
@@ -141,7 +147,14 @@
       </div>
 
       <div class="red-panda">
+        <!--Commit by Julian Supers-->
         <!-- insert picture element -->
+        <picture>
+          <source media="(max-width:600px)"
+            srcset="red-panda-600.jpg">
+          <img src="../images/red-panda.jpg"
+            alt="red panda">
+        </picture>
       </div>
 
     </main>

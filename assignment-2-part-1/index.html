@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Mozilla splash page</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <style>
+     <style>
       /* header and body setup */
 
       html {
@@ -22,8 +22,8 @@
       }
 
       body {
-        width: 100%;
-        max-width: 1200px;
+        width: 90%;
+        max-width: 900px;
         margin: 0 auto;
         background-color: white;
         position: relative;
@@ -36,7 +36,7 @@
       }
 
       header img {
-        width: 100px;
+        width: 75px;
         position: absolute;
         right: 32.5px;
         top: 32.5px;
@@ -45,7 +45,7 @@
       h1 {
         font-size: 50px;
         line-height: 140px;
-        margin: 0 0 0 32.5px;
+        margin: 0 0 0 25px;
       }
 
       /* main section and video styling */
@@ -110,7 +110,7 @@
       <!-- insert <img> element, link to the small
           version of the Firefox logo. I inserted the firefox logo here by using the <img> tag
            and adding in its filepath with the name of the picture- Zakaria Ahmed -->
-          <img src="images/firefox_logo-only_RGB 120PX.png" alt="Firefox Logo">
+          <img src="images/firefox_logo-only_RGB.png" alt="Firefox Logo">
 
     </header>
 
@@ -131,31 +131,22 @@
          where the source image comes from - Julian Supers-->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
           <img 
-            srcset="images/firefox_logo-only_RGB 120PX.png 120w,
-            images/firefox_logo-only_RGB 400.png 400w"
-            sizes="(max-width: 500px) 120PX, 400px"
-            src="images/firefox_logo-only_RGB 400.png"
+            src="images/firefox_logo-only_RGB.png"
             alt="firefox logo">
         </a>
         <a href="https://www.mozilla.org/">
           <!--insert dinosaur head element. I used the <a> tag because that is required to put a href hyperlink on the webpage. I also used the <img> tag to reference
          where the source image comes from - Julian Supers-->
           <img
-          srcset="images\mozilla-dinosaur-head 120px.png 120w,
-          images/mozilla-dinosaur-head 400px.png 400w"
-          sizes="(max-width: 500px) 120PX, 400px"
-          src="images/mozilla-dinosaur-head 400px.png"
-          alt="dinosuar head">
+            src="images/mozilla-dinosaur-head.png"
+            alt="dinosuar head">
         </a>
         <a href="https://addons.mozilla.org/">
 
           <!--insert firfox add-on element. I used the <a> tag because that is required to put a href hyperlink on the webpage. I also used the <img> tag to reference
          where the source image comes from - Julian Supers-->
           <img
-            srcset="images\firefox-addons 120px.jpg 120w,
-            assignment-2-part-1\images\firefox-addons 400px.jpg 400w"
-            sizes="(max-width: 500px) 120PX, 400px"
-            src="images/firefox-addons 400px.jpg"
+            src="images/firefox-addons.jpg"
             alt="firefox add-ons">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
@@ -170,11 +161,9 @@
         <!-- insert picture element. I used the <a> tag because that is required to put a href hyperlink on the webpage. I also used the <img> tag to reference
          where the source image comes from. I also used the <source media to set the max width to 600px - Julian Supers-->
         <picture>
-          <source 
-            media="(max-width:600px)"
-            srcset="images\red-panda. portrait 600.jpg">
-          <img 
-            src="images/red-panda 1200px.png"
+          <source media="(max-width:600px)"
+            srcset="red-panda-600.jpg">
+          <img src="images/red-panda.jpg"
             alt="a red panda">
         </picture>
       </div>

@@ -18,15 +18,16 @@
     <!--Used h1 tag because it is for the primary heading and title of the website - Julian Supers-->
     <h1>Planets data</h1> 
       <table>
+          <!--caption used to explain the purpose of the table and link to Nasas planetary fact sheet as a source using the <a> tag-->
+            <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>)
+            </caption>
         <colgroup>
           <!--Added a column group tag to give a black border to the column with planet names. 
           It is the 2nd column so i needed to add col span = 2 as well. - Zakaria Ahmed-->
           <col span="2">
           <col style="border: 3px solid black;">
         </colgroup>
-        <!--caption used to explain the purpose of the table and link to Nasas planetary fact sheet as a source using the <a> tag-->
-        <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
-        </caption>
+      
         <thead>
           <tr>
             <!--Created a blank space that spans 2 columns - Zakaria-->
@@ -48,92 +49,93 @@
           <!--created the row for terrestrial planets that spans 4 rows 
           and added in the planet Mercury-->
           <tr>
-            <th colspan="2" rowspan="4">Terrestrial planets
-            </th>
+            <!-- Created the row for terrestrial planets that spans 4 rows 
+            and added in the planet Mercury -->
+            <th colspan="2" rowspan="4">Terrestrial planets</th>
             <th>Mercury</th>
-            <!--insert table data for Mercury from planets-data.txt file - Julian Supers-->
-            <td>0.330</td> 
+            <!-- Insert table data for Mercury from planets-data.txt file -->
+            <td>0.330</td>
             <td>4,879</td>
             <td>5427</td>
             <td>3.7</td>
             <td>4222.6</td>
             <td>57.9</td>
-            <td>167</td> 
-            <td>0</td> 
+            <td>167</td>
+            <td>0</td>
             <td>Closest to the Sun</td>
           </tr>
+          
           <tr>
-            <!--added in Venus for terrestrial planets - Zakaria -->
-            <th>Venus</th>
-             <!--insert table data for Venus from planets-data.txt file - Julian Supers-->
-            <td>4.87</td>
-            <td>12,104</td>
-            <td>5243</td>
-            <td>8.9</td>
-            <td>2802.0</td>
-            <td>108.2</td>
-            <td>464</td>
-            <td>0</td>
+          <!--added in Venus for terrestrial planets - Zakaria -->
+          <th>Venus</th>
+          <!--insert table data for Venus from planets-data.txt file - Julian Supers-->
+          <td>4.87</td>
+          <td>12,104</td>
+          <td>5243</td>
+          <td>8.9</td>
+          <td>2802.0</td>
+          <td>108.2</td>
+          <td>464</td>
+          <td>0</td>
           </tr>
           <tr>
-            <!--added in Earth for terrestrial planets - Zakaria-->
-            <th>Earth</th>
-             <!--insert table data for Earth from planets-data.txt file - Julian Supers-->
-           <td>5.97</td>
-            <td>12,756</td>
-            <td>5514</td>
-            <td>9.8 </td>
-            <td>24.0</td>
-             <td>149.6</td>
-              <td>15</td>
-               <td>1</td>
-               <td>Our world</td>
-
+          <!--added in Earth for terrestrial planets - Zakaria-->
+          <th>Earth</th>
+          <!--insert table data for Earth from planets-data.txt file - Julian Supers-->
+          <td>5.97</td>
+          <td>12,756</td>
+          <td>5514</td>
+          <td>9.8 </td>
+          <td>24.0</td>
+          <td>149.6</td>
+          <td>15</td>
+          <td>1</td>
+          <td>Our world</td>
           </tr>
           <tr>
-            <!--added in Mars for terrestrial planets - Zakaria-->
-            <th>Mars</th>
-             <!--insert table data for Mars from planets-data.txt file - Julian Supers-->
-            <td>0.642</td>
-            <td>6,792</td>
-            <td>3933</td>
-            <td>3.7</td>
-            <td>24.7</td>
-            <td>227.9</td>
-             <td>-65</td>
-             <td>2</td>
-             <td>The red planet</td>
+          <!--added in Mars for terrestrial planets - Zakaria-->
+          <th>Mars</th>
+          <!--insert table data for Mars from planets-data.txt file - Julian Supers-->
+          <td>0.642</td>
+          <td>6,792</td>
+          <td>3933</td>
+          <td>3.7</td>
+          <td>24.7</td>
+          <td>227.9</td>
+          <td>-65</td>
+          <td>2</td>
+          <td>The red planet</td>
           </tr>
           <tr>
-            <!--created the row for the Jovian planets(4 rows) category with a sub category gas giants (2 rows) 
-            added in jupiter - Zakaria-->
-            <th rowspan="4">Jovian planets</th>
-            <th rowspan="2">Gas giants</th>
-            <th>Jupiter</th>
-            <!--insert table data for Jupiter from planets-data.txt file - Julian Supers-->
-            <td>1898</td> 
-            <td>142,984</td>
-             <td>1326</td>
-             <td>23.1</td>
-             <td>9.9</td>
-             <td>778.6</td>
-            <td>-110</td> 
-             <td>67</td>
-             <td>The largest planet</td>
+          <!--created the row for the Jovian planets(4 rows) category with a sub category gas giants (2 rows) 
+          added in jupiter - Zakaria-->
+          <th rowspan="4">Jovian planets</th>
+          <th rowspan="2">Gas giants</th>
+          <th>Jupiter</th>
+          <!--insert table data for Jupiter from planets-data.txt file - Julian Supers-->
+          <td>1898</td> 
+          <td>142,984</td>
+          <td>1326</td>
+          <td>23.1</td>
+          <td>9.9</td>
+          <td>778.6</td>
+          <td>-110</td> 
+          <td>67</td>
+          <td>The largest planet</td>
           </tr>
           <tr>
-            <!--added in Saturn for Jovan gas giant planets - Zakaria-->
-            <th>Saturn</th>
-            <!--insert table data for Saturn from planets-data.txt file - Julian Supers-->
-            <td>568</td> 
-           <td>120,536</td> 
-            <td>687</td>
-            <td>9.0</td>
-            <td>10.7</td>
-             <td>1433.5</td>
-            <td>-140</td> 
-              <td>62</td>
-              <td></td>
+          <!--added in Saturn for Jovan gas giant planets - Zakaria-->
+          <th>Saturn</th>
+          <!--insert table data for Saturn from planets-data.txt file - Julian Supers-->
+          <td>568</td> 
+          <td>120,536</td> 
+          <td>687</td>
+          <td>9.0</td>
+          <td>10.7</td>
+          <td>1433.5</td>
+          <td>-140</td> 
+          <td>62</td>
+          <td></td>
           </tr>
           <tr>
             <!--Sub category for Jovian planets ice giants(2 rows)
@@ -141,47 +143,47 @@
             <th rowspan="2">Ice giants</th>
             <th>Uranus</th>
              <!--insert table data for Uranus from planets-data.txt file - Julian Supers-->
-            <td>86.8</td>
-           <td>51,118</td> 
-           <td>1271</td> 
-           <td>8.7</td> 
+          <td>86.8</td>
+          <td>51,118</td> 
+          <td>1271</td> 
+          <td>8.7</td> 
           <td>17.2</td>  
-           <td>2872.5</td> 
-           <td>-195</td> 
-           <td>27</td> 
-           <td></td>
+          <td>2872.5</td> 
+          <td>-195</td> 
+          <td>27</td> 
+          <td></td>
           </tr>
           <tr>
-            <!--added in neptune for Jovan ice giant planets-->
-            <th>Neptune</th>
-            <!--insert table data for Neptune from planets-data.txt file - Julian Supers-->
-           <td>102</td> 
-           <td>49,528</td> 
-           <td>1638</td> 
-           <td>11.0</td> 
-            <td>16.1</td>
-           <td>4495.1</td> 
-             <td>-200</td>
-             <td>14</td>
-             <td></td>
+          <!--added in neptune for Jovan ice giant planets-->
+          <th>Neptune</th>
+          <!--insert table data for Neptune from planets-data.txt file - Julian Supers-->
+          <td>102</td> 
+          <td>49,528</td> 
+          <td>1638</td> 
+          <td>11.0</td> 
+          <td>16.1</td>
+          <td>4495.1</td> 
+          <td>-200</td>
+          <td>14</td>
+          <td></td>
           </tr>
           <tr>
-            <!--added in new row of the Dwarf planets category (2 rows) - Zakaria-->
-            <th colspan="2" rowspan="2">Dwarf planets</th>
+          <!--added in new row of the Dwarf planets category (2 rows) - Zakaria-->
+          <th colspan="2" rowspan="2">Dwarf planets</th>
           </tr>
           <tr>
-            <!--added in pluto for dwarf planets - Zakaria-->
-            <th>Pluto</th>
-            <!--insert table data for Pluto from planets-data.txt file - Julian Supers-->
-           <td>0.0146</td> 
-            <td>2,370</td>
-            <td>2095</td>
-            <td>0.7</td>
-            <td>153.3</td>
-            <td>5906.4</td>
-            <td>-225</td>
-            <td>5</td>
-            <!--inserted <a href link to source because it allows a hyperlink to be added to the web page - Julian Supers-->
+          <!--added in pluto for dwarf planets - Zakaria-->
+          <th>Pluto</th>
+          <!--insert table data for Pluto from planets-data.txt file - Julian Supers-->
+          <td>0.0146</td> 
+          <td>2,370</td>
+          <td>2095</td>
+          <td>0.7</td>
+          <td>153.3</td>
+          <td>5906.4</td>
+          <td>-225</td>
+          <td>5</td>
+          <!--inserted <a href link to source because it allows a hyperlink to be added to the web page - Julian Supers-->
           <td>Declassified as a planet in 2006, but this 
             <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.
           </td> 

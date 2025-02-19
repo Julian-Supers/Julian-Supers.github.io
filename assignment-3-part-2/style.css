@@ -9,5 +9,16 @@ html {
     line-height: 9;
     font-size: 1.1rem;
     text-align: center;
+    color: white;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 10px;
+  border: 1px solid #990000;
+  background-color: red;
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
 
   }

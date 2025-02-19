@@ -28,7 +28,11 @@ a:link,
 a:visited {
   color: #fb6542;
 }
-
+a {
+    text-decoration: none;
+    color: initial;
+}
 a:hover {
   text-decoration: none;
+  color: green;
 }

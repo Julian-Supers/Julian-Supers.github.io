@@ -3,10 +3,10 @@ body {
 }
 
 h1 {
-  color: #375e97;
+  color: #f50c98;
   font-size: 2em;
   font-family: Georgia, "Times New Roman", Times, serif;
-  border-bottom: 1px solid #375e97;
+  border-bottom: 10px dotted purple #375e97;
 }
 
 h2 {

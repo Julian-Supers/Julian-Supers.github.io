@@ -96,7 +96,8 @@ nav > ul {
   a:link {
     display: block;
     text-decoration: none;
-    
+    border: 1px solid #a66;
+
     &:after {
       background: none;
     }

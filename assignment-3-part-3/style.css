@@ -1,4 +1,4 @@
-
+@
 
 
 /* General setup */
@@ -94,6 +94,9 @@ nav > ul {
   list-style: none;
 
   a:link {
+    display: block;
+    text-decoration: none;
+    
     &:after {
       background: none;
     }

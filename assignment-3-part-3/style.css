@@ -1,6 +1,11 @@
 @
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 
-
+.quintessential-regular {
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 /* General setup */
 
 * {
@@ -92,16 +97,32 @@ ol {
 
 nav > ul {
   list-style: none;
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
 
-  a:link {
-    display: block;
-    text-decoration: none;
-    border: 1px solid #a66;
+  li {
 
-    &:after {
-      background: none;
+
+    margin-bottom: 1.5em;
+
+    a:link {
+      display: block;
+      text-decoration: none;
+      border: 1px solid #a66;
+      padding: 1em 2em;
+      text-align: center;
+
+      &:after {
+        background: none;
+      }
+
+      &:active, &:hover, &:focus {
+        background-color: #a66;
+        color: #fff;
+      }
+
     }
-
   }
 
 }

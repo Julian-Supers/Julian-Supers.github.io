@@ -110,7 +110,17 @@ a {
 
   &:link {
     color: #a66;
-    &::after
+    &::after {
+      display: inline-block;
+      content: "";
+      background-image: url("./external-link-52.png");
+      background-size: 1em 1em;
+      background-repeat: none;
+      background-position: center center;
+      width: 1em;
+      height: 1em;
+      margin: 0.2em;
+    }
 
   }
   &:active, &:hover, &:focus {

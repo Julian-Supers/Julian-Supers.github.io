@@ -1,5 +1,4 @@
-@
-@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 html {
@@ -7,8 +6,9 @@ html {
 
 }
 
-.quintessential-regular, h1, h2, h3, h4, h5, h6 {
-  font-family: "Quintessential", serif;
+.montserrat-regular, h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -143,7 +143,7 @@ ol {
 
 nav > ul {
   list-style: none;
-  font-family: "Quintessential", serif;
+  font-family: "Montserrat", serif;
   font-weight: 400;
   font-style: normal;
 

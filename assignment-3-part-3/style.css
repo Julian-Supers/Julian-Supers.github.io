@@ -43,3 +43,29 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+header > h1 {
+  font-size: 3rem;
+}
+
+body {
+  line-height: 1.5em;
+  word-spacing: 0.1em;
+}
+
+header {
+  text-align: center;
+  letter-spacing: 0.25em;
+}
+
+section > p{
+  text-indent: 2.25rem;
+}
+
+a {
+  &:link {
+    color: #a66;
+  }
+  &:hover {
+    color: rgb(230, 162, 162);
+  }
+}

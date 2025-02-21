@@ -1,3 +1,6 @@
+
+
+
 /* General setup */
 
 * {
@@ -62,10 +65,39 @@ section > p{
 }
 
 a {
+  outline: none;
+
   &:link {
     color: #a66;
+    &::after
+
   }
-  &:hover {
+  &:active, &:hover, &:focus {
     color: rgb(230, 162, 162);
+    text-decoration: none;
   }
+  &:visited {
+    color: rgb(116, 63, 63);
+  }
+}
+
+ul {
+  list-style: square;
+  line-height: 1.75em;
+}
+
+ol {
+  line-height: 1.75em;
+}
+
+nav > ul {
+  list-style: none;
+
+  a:link {
+    &:after {
+      background: none;
+    }
+
+  }
+
 }

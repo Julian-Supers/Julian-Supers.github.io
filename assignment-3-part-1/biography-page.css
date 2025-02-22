@@ -6,12 +6,12 @@ h1 {
   color: #f50c98;
   font-size: 2em;
   font-family: Georgia, "Times New Roman", Times, serif;
-  border-bottom: 10px dotted purple;
+  border-bottom: 10px dotted purple; /* bottom border made dotted and purple*/
 }
 
 h2 {
   font-size: 1.5em;
-  font-style: italic;
+  font-style: italic; /* font style is italicized */
 }
 
 .job-title {
@@ -21,13 +21,13 @@ h2 {
 
 ul {
     background-color: #eeeeee;
-    border: 5px solid purple;
+    border: 5px solid purple; /* purple border thats goes around the email, web, and tel */
     padding: 5%;
 }
 
 a:link,
 a:visited {
-  color: #fb6542;
+  color: #fb6542; /* color that appears when hyperlink has been visited */
 }
 a {
     text-decoration: none;
@@ -35,5 +35,5 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: green;
+  color: green; /* when mouse cursor is hovered over hyperlink it turns green */
 }

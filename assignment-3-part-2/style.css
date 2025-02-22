@@ -3,16 +3,16 @@ html {
 }
 
 /* Your CSS below here */
-  div {
+  div { /* css to give the div a width of 200px, margin: auto; line-height: 9; font-size of 1.1rem; text-align to center */
     width: 200px;
     margin: auto;
     line-height: 9;
     font-size: 1.1rem;
-    text-align: center;
+    text-align: center; /* centers the text inside of the box */
     color: white;
   text-shadow: 1px 1px 1px black;
   border-radius: 10px;
-  border: 1px solid #990000;
+  border: 1px solid #990000; /* slightly darker shade color than the base color */
   background-color: red;
   background-image: linear-gradient(
     to top left,
@@ -21,5 +21,5 @@ html {
     rgba(0, 0, 0, 0)
   );
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-    inset -2px -2px 3px rgba(0, 0, 0, 0.6), 2px 2px 5px black;
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6), 2px 2px 5px black; /* makes the box appear to be lifted a little off the webpage */
   }

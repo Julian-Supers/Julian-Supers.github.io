@@ -52,4 +52,6 @@ body {
 
   .feature {
       width: 200px;
+      float: left;
+      margin-right: 1em;
   }

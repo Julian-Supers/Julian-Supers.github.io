@@ -1,13 +1,16 @@
+/* Imported Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* Font Size Across Entire Webpage */
 html {
   font-size: 10px;
 
 }
 
+/* Headings and Body Font Styling*/
 .montserrat-regular, h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -95,11 +98,11 @@ body {
 
 header {
   text-align: center;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.15em;
 }
 
 section > p{
-  text-indent: 2.25rem;
+  text-indent: 2rem;
 }
 
 a {
@@ -132,6 +135,7 @@ a {
 ul {
   list-style: square;
   line-height: 1.75em;
+  padding: 1em 2em;
 }
 
 ol {
@@ -153,7 +157,7 @@ nav > ul {
       display: block;
       text-decoration: none;
       border: 1px solid #a66;
-      padding: 1em 2em;
+      padding: 1.5em 2em;
       text-align: center;
 
       &:after {

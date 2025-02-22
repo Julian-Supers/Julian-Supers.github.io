@@ -11,14 +11,12 @@ html {
 /* Headings and Body Font Styling*/
 .montserrat-regular, h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
 .merriweather-sans-300 {
   font-family: "Merriweather Sans", serif;
-  font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
   
@@ -26,7 +24,6 @@ html {
 
 .merriweather-sans-600 {
   font-family: "Merriweather Sans", serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   
@@ -34,7 +31,6 @@ html {
 
 .merriweather-sans-800 {
   font-family: "Merriweather Sans", serif;
-  font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
   

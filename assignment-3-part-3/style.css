@@ -151,3 +151,12 @@ nav li a {
   border: 1px solid #a66;
 }
 
+nav li a:focus, nav li a:hover {
+  color: white;
+  background: #a66;/* focus/hover background */
+}
+
+nav li a:active {
+  color: white;
+  background: black; /* background color is black on click */
+}

@@ -64,7 +64,26 @@ header, footer {
 
 /* Font Size Across Entire Webpage */
 html {
-  font-family: "Merriweather Sans", serif;
+  font-family: "Merriweather Sans", serif; /* font for body of the webpage */
   font-size: 10px;
 }
 
+h1, h2 {
+  font-family: "Montserrat", sans-serif; /* font for all headings*/
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 5rem; /* font size for h1 */
+  text-align: center; /* center h1 */
+}
+
+h2 {
+  font-size: 3.2rem; /* font size for h2 */
+}
+
+p, li {
+  font-size: 1.6rem; /* size for body text font */
+  line-height: 1.5; /* height for body text lines */
+  letter-spacing: 0.5px; /* spacing for body text letters */
+}

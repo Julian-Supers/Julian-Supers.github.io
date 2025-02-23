@@ -62,7 +62,7 @@ header, footer {
   font-display: swap;
 }
 
-/* Font Size Across Entire Webpage */
+/* font Size Across Entire Webpage */
 html {
   font-family: "Merriweather Sans", serif; /* font for body of the webpage */
   font-size: 10px;
@@ -89,7 +89,7 @@ p, li {
 }
 
 section h2 + p {
-  text-indent: 20px; /* Indenting first paragraph after h2 headings */
+  text-indent: 20px; /* indent first paragraph after h2 headings */
 }
 
 a:link, a:visited {
@@ -101,11 +101,11 @@ a:focus, a:hover {
 }
 
 a:active {
-  color: transparent; /* Transparent color on active hyperlink */
+  color: transparent; /* transparent color on active hyperlink */
   text-shadow: 0px 0px 1px #f00,
                0px 0px 2px #f00,
                0px 0px 3px black,
-               0px 0px 4px /* Text shadow on active hyperlink */
+               0px 0px 4px /* text shadow on active hyperlink */
 }
 
 a {
@@ -129,3 +129,25 @@ ul {
 ol {
   list-style-type: lower-latin;
 }
+
+/* navigation menu */
+nav ul {
+  padding-left: 0; /* nav ul padding removed */
+  margin-top: 0.8rem; /* top of Margin for nav li */
+}
+
+nav li {
+  list-style-type: none; /* bullet points from nav li removed */
+  margin-bottom: 2rem; /* bottom of the Margin for nav li */
+}
+
+nav li a {
+  text-decoration: none; /* text-decoration from nav links removed */
+  display: inline-block;
+  width: 100%;
+  line-height: 3;
+  text-align: center; /* nav links align center */
+  font-size: 2.5rem; /* nav links font size */
+  border: 1px solid #a66;
+}
+

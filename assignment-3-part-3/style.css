@@ -1,28 +1,5 @@
-/* font face definitions */
-@font-face {
-  font-family: 'Montserrat';
-  src: url('fonts/Montserrat-Regular.woff2') format('woff2'),
-       url('fonts/Montserrat-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Merriweather Sans';
-  src: url('fonts/MerriweatherSans-Regular.woff2') format('woff2'),
-       url('fonts/MerriweatherSans-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Font Size Across Entire Webpage */
-html {
-  font-size: 10px;
-}
-
 /* General setup */
+
 * {
   box-sizing: border-box;
 }
@@ -31,13 +8,10 @@ body {
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
-  font-family: "Merriweather Sans", serif;
-  line-height: 1.5em; /* added line-height for clarity */
-  word-spacing: normal; /* reset word spacing */
-  letter-spacing: normal; /* reset letter spacing */
 }
 
 /* Layout */
+
 section {
   float: left;
   width: 50%;
@@ -62,106 +36,35 @@ header, section, aside, nav, footer {
 }
 
 /* header and footer */
+
 header, footer {
   border-top: 5px solid #a66;
   border-bottom: 5px solid #a66;
 }
 
 /* WRITE YOUR CODE BELOW HERE */
-
-header > h1, header > h2, header > h3, header > h4, header > h5, header > h6 {
-  font-family: "Montserrat", sans-serif; /* all headers use Montserrat font */
+/* font face definitions */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-Regular.woff2') format('woff2'),
+       url('fonts/Montserrat-Regular.woff') format('woff');
   font-weight: normal;
-  font-size: 3rem;
-}
-
-header {
-  text-align: center;
-  letter-spacing: 0.15em;
-}
-
-section > p {
-  text-indent: 2rem;
-}
-
-h2 + p {
-  text-indent: 2em; /* each first paragraph after a heading is indented */
-}
-
-a {
-  color: #a66;
-  text-decoration: underline;
-  outline: none; /* deletes the focus outline */
-}
-
-a:visited {
-  color: rgb(116, 63, 63);
-}
-
-a:hover, a:focus {
-  text-decoration: none;
-  color: #fff;
-  background-color: #a66; 
-}
-
-a:link {
-  color: #a66;
-  text-decoration: none;
-  border: none;
-  padding: 0.5em 1em;
-  text-align: center;
-}
-
-/* External link image after hyperlink */
-a:link::after {
-  display: inline-block;
-  content: "";
-  background-image: url("./external-link-52.png"); /* an image to indicate an external link always appears after a hyperlinks content has been displayed */
-  background-size: 1em 1em;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 1em;
-  height: 1em;
-  margin: 0.2em;
-}
-
-/* Active, hover, and focus link state */
-a:active, a:hover, a:focus {
-  color: rgb(230, 162, 162);
-  text-decoration: none;
-  background-color: #a66;
-  color: #fff;
-}
-
-/* List Style */
-ul {
-  list-style: square;
-  line-height: 1.75em;
-  padding: 1em 2em;
-}
-
-ol {
-  line-height: 1.75em;
-}
-
-nav > ul {
-  list-style: none;
-  font-family: "Montserrat", serif; /* navigation unordered list has serif font applied to it */
-  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
-li {
-  margin-bottom: 1.5em;
+@font-face {
+  font-family: 'Merriweather Sans';
+  src: url('fonts/MerriweatherSans-Regular.woff2') format('woff2'),
+       url('fonts/MerriweatherSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* Clear a:after (for external link image) */
-a:after {
-  background: none;
+/* Font Size Across Entire Webpage */
+html {
+  font-family: "Merriweather Sans", serif;
+  font-size: 10px;
 }
 
-/* Fix for excessive space between links and commas in specific paragraph */
-.brave-new-world-paragraph a {
-  word-spacing: normal;  /* Ensure no extra space between links and commas */
-  letter-spacing: normal; /* Reset any extra letter spacing */
-}

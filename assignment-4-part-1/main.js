@@ -28,6 +28,7 @@ function result() {
 
     if(customName.value !== '') {
         const name = customName.value;
+        newsStory = newsStory.replaceAll('Bob', name);
 
     }
 

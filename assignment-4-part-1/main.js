@@ -28,7 +28,7 @@ function result() {
 
     if(customName.value !== '') {
         const name = customName.value;
-        newsStory = newsStory.replaceAll('Bob', name);
+        newStory = newStory.replaceAll('Bob', name);
 
     }
 
@@ -39,6 +39,6 @@ function result() {
         newStory = newStory.replaceAll('300 pounds', weight);
     }
 
-    story.textContent = newsStory;
+    story.textContent = newStory;
     story.style.visibility = 'visible';
 }

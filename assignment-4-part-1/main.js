@@ -15,18 +15,28 @@ const insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewal
 randomize.addEventListener('click', result);
 
 function result() {
+    let newsStory = storyText;
 
-  if(customName.value !== '') {
-    const name = customName.value;
+    const xItem = randomValueFromArray(insertX);
+    const yItem = randomValueFromArray(insertY);
+    const zItem = randomValueFromArray(insertZ);
 
-  }
+    newStory = newStory.replaceAll(':insertx:',xItem);
+    newStory = newStory.replaceAll(':inserty:',yItem);
+    newStory = newStory.replaceAll(':insertz:',zItem);
 
-  if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
 
-  }
+    if(customName.value !== '') {
+        const name = customName.value;
 
-  story.textContent = ;
-  story.style.visibility = 'visible';
+    }
+
+    if(document.getElementById("uk").checked) {
+        const weight = Math.round(300);
+        const temperature =  Math.round(94);
+
+    }
+
+    story.textContent = ;
+    story.style.visibility = 'visible';
 }

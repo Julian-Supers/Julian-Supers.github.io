@@ -39,3 +39,6 @@ draw() {
   ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
   ctx.fill();
 }
+
+
+const testBall = new Ball(50, 100, 4, 4, "blue", 10);

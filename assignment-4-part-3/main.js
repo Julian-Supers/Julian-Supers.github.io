@@ -39,6 +39,8 @@ draw() {
   ctx.fill();
 }
 
+// update method
+
 update() {
   if ((this.x + this.size) >= width) {
     this.velX = -(this.velX);
@@ -59,6 +61,8 @@ update() {
   this.x += this.velX;
   this.y += this.velY;
 }
+
+// collisionDetect method
 
 collisionDetect() {
   for (const ball of balls) {

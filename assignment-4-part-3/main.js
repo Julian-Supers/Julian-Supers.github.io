@@ -29,9 +29,8 @@ class Ball {
     this.color = color;
     this.size = size;
   }
-}
 
-// draw method 
+  // draw method 
 
 draw() {
   ctx.beginPath();
@@ -73,6 +72,9 @@ collisionDetect() {
       }
     }
   }
+}
+
+
 }
 
 const balls = [];

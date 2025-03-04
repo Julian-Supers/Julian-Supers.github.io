@@ -61,6 +61,20 @@ update() {
   this.y += this.velY;
 }
 
+collisionDetect() {
+  for (const ball of balls) {
+    if (this !== ball) {
+      const dx = this.x - ball.x;
+      const dy = this.y - ball.y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+
+      if (distance < this.size + ball.size) {
+        ball.color = this.color = randomRGB();
+      }
+    }
+  }
+}
+
 const balls = [];
 
 while (balls.length < 25) {
@@ -78,21 +92,6 @@ while (balls.length < 25) {
 
   balls.push(ball);
 }
-
-collisionDetect() {
-  for (const ball of balls) {
-    if (this !== ball) {
-      const dx = this.x - ball.x;
-      const dy = this.y - ball.y;
-      const distance = Math.sqrt(dx * dx + dy * dy);
-
-      if (distance < this.size + ball.size) {
-        ball.color = this.color = randomRGB();
-      }
-    }
-  }
-}
-
 
 function loop() {
   ctx.fillStyle = "rgb(0 0 0 / 25%)";

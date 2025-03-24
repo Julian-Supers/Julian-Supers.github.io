@@ -148,6 +148,10 @@ class evilcircle extends shape {
       ball.collisionDetect();
     }
 
+    evil.draw();
+    evil.collisionDetect();
+    evil.update();
+
     requestAnimationFrame(loop);
   }
 

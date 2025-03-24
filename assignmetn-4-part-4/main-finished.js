@@ -119,7 +119,7 @@ class evilcircle extends shape {
     }
   }
 
-
+}
   const balls = [];
 
   while (balls.length < 25) {

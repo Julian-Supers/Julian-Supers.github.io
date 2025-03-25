@@ -75,7 +75,13 @@ class evilcircle extends shape {
   constructor(x,y) {
     super(x,y,20,20)
     this.color="white"
-    this.size=10
+    this.size = 10;
+    this.velX = 5;
+    this.velY = 5;
+    // create evil circle object
+    const evil = new evilcircle(100, 100);
+
+    // listen for keyboard input to move object
     window.addEventListener("keydown", (e) => {
       switch (e.key) {
         case "a":
@@ -93,13 +99,21 @@ class evilcircle extends shape {
       }
   });
   
+// Function to update the ball count
+function updateBallCount() {
+  const ballCountDisplay = document.getElementById('ballCount');
+  if (ballCountDisplay) {
+    ballCountDisplay.textContent = `Ball Count: ${balls.length}`;
+  }
+}
+
   }
   draw() {
     ctx.beginPath();
     ctx.strokeStyle = this.color;
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
     ctx.stroke();
-    ctx.lineWidth=3;
+    ctx.lineWidth = 3;
   }
   update() {
     if ((this.x + this.size) >= width) {
@@ -121,6 +135,15 @@ class evilcircle extends shape {
 
 }
   const balls = [];
+  let ballCount = 25;
+  const ballcountdisplay = document.getElementById("ballcount")
+
+  // specific ball added to array
+  const Ball = new Ball(50, 100, 4, 4, "blue", 10);
+  Ball.color;
+  Ball.x;
+  Ball.size;
+  Ball.draw();
 
   while (balls.length < 25) {
     const size = random(10, 20);
@@ -138,6 +161,7 @@ class evilcircle extends shape {
     balls.push(ball);
   }
 
+// loop for animation
   function loop() {
     ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
     ctx.fillRect(0, 0, width, height);
@@ -148,11 +172,14 @@ class evilcircle extends shape {
       ball.collisionDetect();
     }
 
-    evil.draw();
-    evil.collisionDetect();
-    evil.update();
+    evilcircle.draw();
+    evilcircle.collisionDetect();
+    evilcircle.update();
+
+    updateBallCount();
 
     requestAnimationFrame(loop);
   }
 
+// start loop animation
   loop();

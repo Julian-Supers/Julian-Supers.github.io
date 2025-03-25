@@ -5,48 +5,40 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const fileNames = ["pic1.jpg","pic2.jpg","pic3.jpg","pic4.jpg","pic5.jpg"];
+const imgArr = ["pic1.jpg","pic2.jpg","pic3.jpg","pic4.jpg","pic5.jpg"];
 
 /* Declaring the alternative text for each image file */
-const alternativeText = {
-    pic1: "closeup of a blue human eye",
-    pic2: "A beautiful sunset over the mountains", 
-    pic3: "A snowing landscape with pine trees", 
-    pic4: "A cityscape with tall buildings", 
-    pic5: "A closeup of a flower in bloom"
-};
+const imgAlts = [
+    {altText: "closeup of a blue human eye"},
+    {altText: "A beautiful sunset over the mountains"}, 
+    {altText: "A snowing landscape with pine trees"}, 
+    {altText: "A cityscape with tall buildings"}, 
+    {altText: "A closeup of a flower in bloom"}
+];
 /* Looping through images */
+for (let i = 0; i < imgArr.length; i++) {
+  const newImage = document.createElement('img');
+  newImage.setAttribute('src', `images/${imgArr[i]}`);
+  newImage.setAttribute('alt', imgAlts[i].altText);
+  thumbBar.appendChild(newImage);
+}
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
 
 /* Wiring up the Darken/Lighten button */
-btn.addEventListener('click', () => {
-    if (btn.classList.contains('dark')) {
-      btn.classList.replace('dark', 'light');
+btn.addEventListener("click", () => {
+  if (btn.getAttribute("class") === "dark") {
+      btn.setAttribute("class", "light");
       btn.textContent = "Lighten";
       overlay.style.backgroundColor = "rgb(0 0 0 / 50%)";
-    } else {
-      btn.classList.replace('light', 'dark');
+  } else {
+      btn.setAttribute("class", "dark");
       btn.textContent = "Darken";
       overlay.style.backgroundColor = "rgb(0 0 0 / 0%)";
-    }
-  });
-
-/* Loop through the array of filenames and add thumbnail images */
-fileNames.forEach((file, index) => {
-  const newImage = document.createElement('img');
-  newImage.src = `images/${file}`;
-  newImage.alt = alternativeText[`pic${index + 1}`]; 
-  thumbBar.appendChild(newImage);
+  }
 });
 
 /* Add a click event listener to each thumbnail */
-thumbBar.querySelectorAll('img').forEach(img => {
-    img.addEventListener('click', (e) => {
-      displayedImage.src = e.target.src;
-      displayedImage.alt = e.target.alt;
-    });
-  });
+  thumbBar.addEventListener("click", (event) => {
+    displayedImage.setAttribute('src', event.target.getAttribute('src'));
+    displayedImage.setAttribute('alt', event.target.getAttribute('alt'));
+});

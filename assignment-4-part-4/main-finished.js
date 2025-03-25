@@ -84,8 +84,7 @@ class EvilCircle extends shape {
     super(x,y,20,20)
     this.color="white"
     this.size = 10;
-    this.velX = 5;
-    this.velY = 5;
+
 
     // listen for keyboard input to move object
     window.addEventListener("keydown", (e) => {
@@ -135,7 +134,7 @@ collisionDetect() {
     if (ball.exist) {
       const dx = this.x - ball.x;
       const dy = this.y - ball.y;
-      const distance = Math.sqrt(dx * dx * dy * dy);
+      const distance = Math.sqrt(dx * dx + dy * dy);
       if (distance < this.size + ball.size) {
         ball.exist = false;
         ballCount--;
@@ -181,10 +180,13 @@ collisionDetect() {
     ctx.fillRect(0, 0, width, height);
 
     for (const ball of balls) {
-      ball.draw();
-      ball.update();
-      ball.collisionDetect();
-    }
+      if (ball.exist) {
+          ball.draw();
+          ball.update();
+          ball.collisionDetect();
+      }
+  }
+  
 
     evilcircle.draw();
     evilcircle.collisionDetect();

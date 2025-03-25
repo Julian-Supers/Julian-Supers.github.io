@@ -16,12 +16,13 @@ const imgAlts = [
     {"pic5": "A closeup of a moth on a leaf"}
 ];
 /* Looping through images */
-for (let i = 1; i < imgArr.length; i++) {
+for (let i = 0; i < imgArr.length; i++) {
   const newImage = document.createElement('img');
-  newImage.setAttribute('src', `images/${imgArr[i]}`);
-  newImage.setAttribute('alt', imgAlts[i].altText);
+  newImage.setAttribute('src', 'images/' + imgArr[i]);
+  newImage.setAttribute('alt', imgAlts[i]["pic" + (i + 1)]);
   thumbBar.appendChild(newImage);
 }
+
 
 
 /* Wiring up the Darken/Lighten button */

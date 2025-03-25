@@ -9,14 +9,14 @@ const imgArr = ["pic1.jpg","pic2.jpg","pic3.jpg","pic4.jpg","pic5.jpg"];
 
 /* Declaring the alternative text for each image file */
 const imgAlts = [
-    {"pic1": "closeup of a blue human eye"},
-    {"pic2": "A beautiful sunset over the mountains"}, 
-    {"pic3": "A snowing landscape with pine trees"}, 
-    {"pic4": "A cityscape with tall buildings"}, 
-    {"pic5": "A closeup of a flower in bloom"}
+    {"pic1": "Closeup of a blue human eye"},
+    {"pic2": "A Rock formed in the shape of a wave"}, 
+    {"pic3": "White and purple pansies"}, 
+    {"pic4": "A section of a wall from pharoah's tomb"}, 
+    {"pic5": "A closeup of a moth on a leaf"}
 ];
 /* Looping through images */
-for (let i = 0; i < imgArr.length; i++) {
+for (let i = 1; i < imgArr.length; i++) {
   const newImage = document.createElement('img');
   newImage.setAttribute('src', `images/${imgArr[i]}`);
   newImage.setAttribute('alt', imgAlts[i].altText);

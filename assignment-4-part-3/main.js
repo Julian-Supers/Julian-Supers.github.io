@@ -82,7 +82,11 @@ collisionDetect() {
 }
 
 const balls = [];
-
+const testBall = new Ball(50, 100, 4, 4, "blue", 10);
+testBall.x;
+testBall.size;
+testBall.color;
+testBall.draw();
 while (balls.length < 25) {
   const size = random(10, 20);
   const ball = new Ball(

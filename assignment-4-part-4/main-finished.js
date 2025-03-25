@@ -149,16 +149,17 @@ collisionDetect() {
 
 }
 }
+
+  // specific ball added to array
+  const myBall = new Ball(50, 100, 4, 4, "blue", 10);
+  myBall.color;
+  myBall.x;
+  myBall.size;
+  myBall.draw();
+
   const balls = [];
   let ballCount = 25;
   const ballcountdisplay = document.getElementById("ballcount")
-
-  // specific ball added to array
-  const Ball = new Ball(50, 100, 4, 4, "blue", 10);
-  Ball.color;
-  Ball.x;
-  Ball.size;
-  Ball.draw();
 
   while (balls.length < 25) {
     const size = random(10, 20);

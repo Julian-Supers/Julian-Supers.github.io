@@ -29,12 +29,10 @@ class shape {
 
 class Ball extends shape{
   constructor(x, y, velX, velY, color, size) {
-    this.x = x;
-    this.y = y;
-    this.velX = velX;
-    this.velY = velY;
+    super(x,y,velX,velY)
     this.color = color;
     this.size = size;
+    this.exist = true;
   }
 
   draw() {
@@ -81,7 +79,7 @@ class Ball extends shape{
   }
 }
 
-class evilcircle extends shape {
+class EvilCircle extends shape {
   constructor(x,y) {
     super(x,y,20,20)
     this.color="white"
@@ -176,7 +174,7 @@ collisionDetect() {
 
     balls.push(ball);
   }
-  const evilcircle = new EvilCircle (random(0, width), random(0, height));
+  const evilcircle = new EvilCircle(random(0, width), random(0, height));
 // loop for animation
   function loop() {
     ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
@@ -191,8 +189,6 @@ collisionDetect() {
     evilcircle.draw();
     evilcircle.collisionDetect();
     evilcircle.update();
-
-    updateBallCount();
 
     requestAnimationFrame(loop);
   }

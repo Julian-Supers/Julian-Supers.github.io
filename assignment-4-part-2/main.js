@@ -9,11 +9,11 @@ const imgArr = ["pic1.jpg","pic2.jpg","pic3.jpg","pic4.jpg","pic5.jpg"];
 
 /* Declaring the alternative text for each image file */
 const imgAlts = [
-    {altText: "closeup of a blue human eye"},
-    {altText: "A beautiful sunset over the mountains"}, 
-    {altText: "A snowing landscape with pine trees"}, 
-    {altText: "A cityscape with tall buildings"}, 
-    {altText: "A closeup of a flower in bloom"}
+    {"pic1": "closeup of a blue human eye"},
+    {"pic2": "A beautiful sunset over the mountains"}, 
+    {"pic3": "A snowing landscape with pine trees"}, 
+    {"pic4": "A cityscape with tall buildings"}, 
+    {"pic5": "A closeup of a flower in bloom"}
 ];
 /* Looping through images */
 for (let i = 0; i < imgArr.length; i++) {

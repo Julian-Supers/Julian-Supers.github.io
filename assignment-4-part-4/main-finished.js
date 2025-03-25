@@ -88,8 +88,6 @@ class evilcircle extends shape {
     this.size = 10;
     this.velX = 5;
     this.velY = 5;
-    // create evil circle object
-    const evil = new evilcircle(100, 100);
 
     // listen for keyboard input to move object
     window.addEventListener("keydown", (e) => {

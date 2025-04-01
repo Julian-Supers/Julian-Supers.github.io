@@ -9,17 +9,18 @@ const imgArr = ["pic1.jpg","pic2.jpg","pic3.jpg","pic4.jpg","pic5.jpg"];
 
 /* Declaring the alternative text for each image file */
 const imgAlts = [
-    {"pic1": "Closeup of a blue human eye"},
-    {"pic2": "A Rock formed in the shape of a wave"}, 
-    {"pic3": "White and purple pansies"}, 
-    {"pic4": "A section of a wall from pharoah's tomb"}, 
-    {"pic5": "A closeup of a moth on a leaf"}
+  "Closeup of a blue human eye",
+  "A Rock formed in the shape of a wave", 
+  "White and purple pansies", 
+  "A section of a wall from pharaoh's tomb", 
+  "A closeup of a moth on a leaf"
 ];
+
 /* Looping through images */
 for (let i = 0; i < imgArr.length; i++) {
   const newImage = document.createElement('img');
   newImage.setAttribute('src', 'images/' + imgArr[i]);
-  newImage.setAttribute('alt', imgAlts[i]["pic" + (i + 1)]);
+  newImage.setAttribute('alt', imgAlts[i]);
   thumbBar.appendChild(newImage);
 }
 

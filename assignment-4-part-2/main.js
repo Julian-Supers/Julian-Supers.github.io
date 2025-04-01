@@ -9,19 +9,11 @@ const imgArr = ["pic1.jpg","pic2.jpg","pic3.jpg","pic4.jpg","pic5.jpg"];
 
 /* Declaring the alternative text for each image file */
 const imgAlts = [
-<<<<<<< HEAD
-  {"pic1": "Closeup of a blue human eye"},
-  {"pic2": "A Rock formed in the shape of a wave"}, 
-  {"pic3": "White and purple pansies"}, 
-  {"pic4": "A section of a wall from pharoah's tomb"}, 
-  {"pic5": "A closeup of a moth on a leaf"}
-=======
     {"pic1": "Closeup of a blue human eye"},
     {"pic2": "A Rock formed in the shape of a wave"}, 
     {"pic3": "White and purple pansies"}, 
     {"pic4": "A section of a wall from pharoah's tomb"}, 
     {"pic5": "A closeup of a moth on a leaf"}
->>>>>>> parent of 4bedbde (Update main.js)
 ];
 /* Looping through images */
 for (let i = 1; i < imgArr.length; i++) {

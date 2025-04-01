@@ -17,7 +17,7 @@ const imgAlts = [
 ];
 
 /* Looping through images */
-for (let i = 0; i < imgArr.length; i++) {
+for (let i = 1; i < imgArr.length; i++) {
   const newImage = document.createElement('img');
   newImage.setAttribute('src', 'images/' + imgArr[i]);
   newImage.setAttribute('alt', imgAlts[i]);

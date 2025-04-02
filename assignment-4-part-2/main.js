@@ -25,7 +25,6 @@ for (let i = 1; i < 6; i++) {
 }
 
 
-
 /* Wiring up the Darken/Lighten button */
 btn.addEventListener("click", () => {
   if (btn.getAttribute("class") === "dark") {

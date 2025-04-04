@@ -193,7 +193,7 @@ collisionDetect() {
     // calls the methods withn the evilcircle method
     evilcircle.draw();
     evilcircle.collisionDetect();
-    evilcircle.update();
+    evilcircle.checkBounds();
 
     requestAnimationFrame(loop);
   }

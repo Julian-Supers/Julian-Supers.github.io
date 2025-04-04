@@ -34,7 +34,7 @@ class Ball extends shape{
     this.size = size;
     this.exist = true;
   }
-
+// it draws the object instance on the canvas
   draw() {
     ctx.beginPath();
     ctx.fillStyle = this.color;
@@ -78,7 +78,7 @@ class Ball extends shape{
     }
   }
 }
-
+// creates the white evil circle size and color to white
 class EvilCircle extends shape {
   constructor(x,y) {
     super(x,y,20,20)
@@ -104,6 +104,7 @@ class EvilCircle extends shape {
       }
   });
   }
+  // it draws the object instance on the canvas
   draw() {
     ctx.beginPath();
     ctx.strokeStyle = this.color;
@@ -111,7 +112,9 @@ class EvilCircle extends shape {
     ctx.stroke();
     ctx.lineWidth = 3;
   }
-  update() {
+  // This method will do the same thing as the first part of the update() method for Ball 
+  // looks to see whether the evil circle is going to go off the edge of the screen, and stop it from doing so
+  checkBounds() {
     if ((this.x + this.size) >= width) {
       this.x = this.size;
     }
@@ -187,7 +190,7 @@ collisionDetect() {
       }
   }
   
-
+    // calls the methods withn the evilcircle method
     evilcircle.draw();
     evilcircle.collisionDetect();
     evilcircle.update();

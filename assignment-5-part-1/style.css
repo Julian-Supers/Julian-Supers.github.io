@@ -249,11 +249,13 @@ audio {
   flex: 5;
 }
 
+/* I added the default link color to the website to make them stand out more for visual aid */
 .secondary a {
   color: blue;
   text-decoration: none;
 }
 
+/* I added the link color to change when the link is hovered over in order to improve the visual accessibility to the user  */
 .secondary a:hover {
   color: darkblue;
   text-decoration: underline;

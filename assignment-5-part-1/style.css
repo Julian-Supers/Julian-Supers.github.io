@@ -14,18 +14,19 @@ body {
   width: 80%;
   min-width: 1024px;
   margin: 0 auto;
+  font-weight: bold; /* I added font weight to make the body text more readable for easier reading */
 }
 
 /* || typography */
 
 h1,h2,h3 {
   font-family: 'Sonsie One', cursive;
-  color: #2a2a2a;
+  color: #333;
 }
 
 p, input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
-  color: #2a2a2a;
+  color: #333;
 }
 
 h1 {
